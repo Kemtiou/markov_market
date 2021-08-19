@@ -2,6 +2,7 @@ from Customer import Customer
 from Supermarket import Supermarket
 import pandas as pd
 import numpy as np
+import random
 
 # -------------------- 
 # time ticks for 15 minutes in 1 min frequency
@@ -32,8 +33,8 @@ for t in pd.date_range(start=t_open, end=t_close, freq='min'):
     # update customer next state
     s.next_minute()
     
-    s.print_customers()
-    #print(repr(s))
+    #s.print_customers()
+    print(repr(s))
 
 
 

@@ -25,7 +25,8 @@ class Supermarket:
     def print_customers(self):
         """print all customers with the current time and id in CSV format.
         """
-        print(self.customers)
+        for one_customer in self.customers:
+            print(self.minutes,',', one_customer.name, ',', one_customer.state)
         return None
 
     def next_minute(self):
